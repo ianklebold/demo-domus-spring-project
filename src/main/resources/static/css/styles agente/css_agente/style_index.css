@@ -1,0 +1,98 @@
+body{
+	background:-webkit-gradient(linear, 60% 20%, 60% 71%, from(#C7C7C7), to(#5cabe0));
+	padding: 0;
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+}
+a{
+	font-style: none;
+	text-decoration: none;
+}
+
+.lateral_izq img{
+	opacity: 0.4;
+	height: 100%;
+	width: 100%;
+}
+
+.lateral_izq{
+	width: 450px;
+	height: 97.5%;
+	/*background-color: rgba(126, 211, 234,0.6);*/
+	background-color: rgba(4, 133, 219, 0.7);
+	position: absolute;
+
+}
+
+.lateral_der{
+	text-align: center;
+	float: right;
+	width: 910px;
+	height: 650px;
+
+}
+
+#contenedor_ingresar{
+	margin-top: 20%;
+}
+
+#boton_ingresar img{
+border:outset 4px #c7c7c7;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright:0px;
+-moz-border-radius-bottomleft:0px;
+-moz-border-radius-bottomright:0px;
+-webkit-border-top-left-radius:0px;
+-webkit-border-top-right-radius:0px;
+-webkit-border-bottom-left-radius:0px;
+-webkit-border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+border-top-right-radius:0px;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+
+}
+
+#boton_ingresar img:hover{
+	color: rgba(255, 255, 255, 1) !important;
+  	box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  	transition: all 0.2s ease;
+}
+
+#boton_ingresar a{
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 30px;
+	margin-left: 40%;
+}
+
+#mensaje_ingresar1{
+	background-color: #0485db;
+	margin-left: 30%;
+	width: 430px;
+	height: 80px;
+	color: white;
+
+}
+
+#mensaje_ingresar1 p{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	margin-top: 2em;
+	margin-left: 6em;}
+
+#mensaje_ingresar2{
+	color: #7ED3EA;
+	font-weight: bold;
+	margin-left: 8%;
+
+}
+
+#pie_contenedor{
+	margin-top: 6em;
+	margin-left: 30%;
+	width:430px;
+	background-color: rgba(126, 211, 234,0.3);
+}

@@ -1,0 +1,187 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #fff;
+
+}
+
+
+/*Variables para colores*/
+:root{
+    --color_red: #0ffac3;
+
+}
+
+
+a{
+    text-decoration:none;
+}
+
+.listado_propiedades {
+    margin-top: 4em;
+}
+
+.listado_propiedades h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conjunto_propiedades{
+    background-color: rgba(92, 171, 224, 0.5);
+    width: 100%;
+    height: 30em;
+    margin-top: 5em;
+}
+
+
+
+.conjunto_propiedades2{
+    background-color: rgba(92, 171, 224, 0.5);
+    width: 100%;
+    height: 30em;
+    margin-top: 2em;
+
+}
+
+.clase_propiedad{
+    
+    width: 20em;
+    height: 25em;
+    background-color: green;
+    position: absolute;
+    margin-left: 5.5em;
+    margin-top: 4em;
+}
+#id_propiedad{
+    background-image: url('../img/propiedades/post-1.jpg');
+}
+
+
+.clase_propiedad2{
+    width: 20em;
+    height: 25em;
+    background-color: blue;
+    position: absolute;
+    margin-left: 30.5em;
+    margin-top: 4em;
+}
+
+#id_propiedad2{
+    
+    background-image: url('../img/propiedades/post-2.jpg');
+}
+
+.clase_propiedad3{
+    width: 20em;
+    height: 25em;
+    background-color: blue;
+    position: absolute;
+    margin-left: 55.5em;
+    margin-top: 4em;
+}
+
+#id_propiedad3{
+    background-image: url('../img/propiedades/post-7.jpg');
+}
+#id_propiedad4{
+    background-image: url('../img/propiedades/post-5.jpg');
+}
+#id_propiedad5{
+    background-image: url('../img/propiedades/post-6.jpg');
+}
+#id_propiedad6{
+    background-image: url('../img/propiedades/property-8.jpg');
+}
+
+
+
+.datos_propiedades{
+    
+    width: 100%;
+    height: 10em;
+    margin-top: 60%;
+
+}
+
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_direc{
+
+    font-family: 'Signika', sans-serif;
+}
+
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_direc{
+    position: absolute;
+}
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_Venta{
+    position: absolute;
+}
+.conjunto_propiedades .clase_propiedad .datos_propiedades .edicion_VerProp{
+    position: absolute;
+}
+
+
+.conjunto_propiedades .clase_propiedad .datos_propiedades a{
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.conjunto_propiedades .clase_propiedad2 .datos_propiedades a{
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.conjunto_propiedades .clase_propiedad3 .datos_propiedades a{
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.conjunto_propiedades2 .clase_propiedad .datos_propiedades a{
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.conjunto_propiedades2 .clase_propiedad2 .datos_propiedades a{
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.conjunto_propiedades2 .clase_propiedad3 .datos_propiedades a{
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+
+.conjunto_propiedades .clase_propiedad .datos_propiedades a:hover{
+    color: var(--color_red)
+}
+
+.conjunto_propiedades .clase_propiedad2 .datos_propiedades a:hover{
+    color: var(--color_red)
+}
+
+.conjunto_propiedades .clase_propiedad3 .datos_propiedades a:hover{
+    color: var(--color_red)
+}
+
+.conjunto_propiedades2 .clase_propiedad .datos_propiedades a:hover{
+    color: var(--color_red)
+}
+.conjunto_propiedades2 .clase_propiedad2 .datos_propiedades a:hover{
+    color: var(--color_red)
+}
+.conjunto_propiedades2 .clase_propiedad3 .datos_propiedades a:hover{
+    color: var(--color_red)
+}
+
+.paginacion{
+    margin-top: 3em;
+    margin-right: 40%;
+}
+
+
+
+    

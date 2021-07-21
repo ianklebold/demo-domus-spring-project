@@ -1,0 +1,50 @@
+
+.com-titulo{
+    margin-left: 0.2em;
+
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-weight: bold; 
+    font-size: 48px;
+}
+
+
+/*Variables para colores*/
+:root{
+    caret-color: #0ffac3;
+    size: 50px;
+}
+
+.cabecera{
+    width: 100%;
+    padding-top: 0.1em;
+    background: rgba(15, 250, 195, 0.2); 
+    z-index: 10;
+	top: 0;
+	position: fixed;
+    
+    -moz-box-shadow: -3px 4px 26px #000000;
+    -webkit-box-shadow: -3px 4px 26px #000000;
+    box-shadow: -3px 4px 26px #000000;
+}
+
+#lista-cabecera{
+    margin-left: 92em;
+}
+
+#lista-cabecera li a{
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 16px;
+
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    display: inline-block;
+}
+
+#lista-cabecera li{
+    display: inline;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

@@ -14,4 +14,7 @@ import java.util.*;
 @Repository
 public interface ClienteRepository extends CrudRepository<Cliente, Long>{
     List<Cliente> findByApellidoLike(String apellido);
+
+    List<Cliente> findAllByOrderByIdDesc();
+    List<Cliente> findAllByOrderByIdAsc();
 }

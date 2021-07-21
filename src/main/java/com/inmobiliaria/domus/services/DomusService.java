@@ -37,6 +37,15 @@ public class DomusService {
         return (ArrayList<Cliente>) clienteRepository.findByApellidoLike(apellido);
     }
 
+    public ArrayList<Cliente> obtenerOrdenadoDescClienteId(){
+        return (ArrayList<Cliente>) clienteRepository.findAllByOrderByIdDesc();
+    }
+
+    public ArrayList<Cliente> obtenerOrdenadoAscClienteId(){
+        return (ArrayList<Cliente>) clienteRepository.findAllByOrderByIdAsc();
+    }
+
+    
     public Cliente guardarCliente(Cliente clienteNuevo){
         /**
          * Este metodo guarda en la BD un nuevo cliente

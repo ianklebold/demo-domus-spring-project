@@ -14,7 +14,7 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private String email;
-    private int telefono; 
+    private String telefono; 
 
     //No existee OneToMany sin un ManyToOne 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
@@ -79,14 +79,14 @@ public class Cliente {
     /**
      * @return Long return the telefono
      */
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
     /**
      * @param telefono the telefono to set
      */
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

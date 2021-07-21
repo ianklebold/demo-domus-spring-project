@@ -1,0 +1,17 @@
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.mensaje_reporte{
+    font-weight:bold;
+}
+
+#mensaje_titulo_reporte{
+    margin-left: 10em;
+}

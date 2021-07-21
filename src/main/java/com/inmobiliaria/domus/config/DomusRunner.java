@@ -32,9 +32,6 @@ public class DomusRunner implements CommandLineRunner{
 
         domusService.guardarCliente(cliente2);
       */
-        System.out.println("Apellidos!");
-        System.out.println(domusService.clientePorApellido("Martinez").get(0).getEmail());
-
 
 
 

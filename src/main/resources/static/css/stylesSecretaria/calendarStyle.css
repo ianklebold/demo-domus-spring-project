@@ -1,0 +1,245 @@
+html, body
+{
+	height: 100%;
+}
+                               
+                              /*STRUCTURE*/
+body{
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns:
+    [left-column] 2fr
+    [right-column] 1fr;
+    grid-template-rows:
+    [header-rows] 1fr
+    [contenido-rows] 2fr;
+    min-width: 750px;  
+}
+
+body>.header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header,.main-calendar {
+    grid-column: left-column /  -1;
+    margin: 10px;
+}
+
+.main-calendar{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.main-calendar_calendar{
+    flex-grow: 1.5;
+    min-width: 700px;
+}
+.main-calendar_detail{
+    flex-shrink: 2;
+    min-width: 200px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+                                              /*HEADER*/
+
+
+.header{
+  background-color: #0ffac3;
+  margin: 10px;
+  box-shadow: -3px 4px 26px #000000;
+  height: 100px;
+  display: flex;  
+}
+.header_menu{
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.header_logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-weight: bold; 
+    font-size: 48px;
+}
+
+.header_logo:hover{
+    color:  rgba(15, 250, 195, 0.2);
+}
+
+.header_logo>a:hover{
+    text-decoration: none;
+}
+.header_logo>a{
+  text-decoration: none;
+  color: black;
+  padding:10px;
+}
+.option{
+  display: inline-block;
+}
+
+.option>a{
+  text-decoration: none;
+  color:blue;
+  padding: 10px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+                                            /*CALENDAR*/
+.calendar-day {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 80px;
+  }
+  .calendar-table {
+    margin: 0 auto;
+    width: 700px;
+  }
+  .selected {
+    background-color: #eee;
+  }
+  .outside .date {
+    color: #ccc;
+  }
+  .timetitle {
+    white-space: nowrap;
+    text-align: right;
+  }
+  .event {
+    border-top: 1px solid #b2dba1;
+    border-bottom: 1px solid #b2dba1;
+    background-image: linear-gradient(to bottom, #dff0d8 0px, #c8e5bc 100%);
+    background-repeat: repeat-x;
+    color: #3c763d;
+    border-width: 1px;
+    font-size: .75em;
+    padding: 0 .75em;
+    line-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1px;
+  }
+  .event.begin {
+    border-left: 1px solid #b2dba1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .event.end {
+    border-right: 1px solid #b2dba1;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .event.all-day {
+    border-top: 1px solid #9acfea;
+    border-bottom: 1px solid #9acfea;
+    background-image: linear-gradient(to bottom, #d9edf7 0px, #b9def0 100%);
+    background-repeat: repeat-x;
+    color: #31708f;
+    border-width: 1px;
+  }
+  .event.all-day.begin {
+    border-left: 1px solid #9acfea;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+  .event.all-day.end {
+    border-right: 1px solid #9acfea;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .event.clear {
+    background: none;
+    border: 1px solid transparent;
+  }
+  .table-tight > thead > tr > th,
+  .table-tight > tbody > tr > th,
+  .table-tight > tfoot > tr > th,
+  .table-tight > thead > tr > td,
+  .table-tight > tbody > tr > td,
+  .table-tight > tfoot > tr > td {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .table-tight-vert > thead > tr > th,
+  .table-tight-vert > tbody > tr > th,
+  .table-tight-vert > tfoot > tr > th,
+  .table-tight-vert > thead > tr > td,
+  .table-tight-vert > tbody > tr > td,
+  .table-tight-vert > tfoot > tr > td {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+                                    /*DETAIL*/
+  .main-calendar_detail > h2{
+      align-self: center;
+  }
+
+                        
+  .task{
+  
+    flex-basis: 100%;
+    list-style: none;
+    padding: 10px;
+    margin:10px 10px 10px -30px;        /*Es porque li tien por defecto 40px de margin left*/
+
+    border-top: 1px solid #b2dba1;
+    border-bottom: 1px solid #b2dba1;
+    background-image: linear-gradient(to bottom, #dff0d8 0px, #c8e5bc 100%);
+    background-repeat: repeat-x;
+    color: #3c763d;
+    border-width: 1px;
+    font-size: .75em;
+    padding: 0 .75em;
+    line-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1px;
+    color: black !important;
+    }
+
+.main-calendar_detail_tasks>li>button{
+  display: block;
+  width: 100%;
+  text-align: left;
+  
+}
+.main-calendar_detail_tasks>li{
+  list-style: none;
+}
+
+
+
+.modal-dialog{
+  position:sticky;
+  left: 0 !important;
+  width: 600px;
+  padding-bottom: 30px;
+  margin-top: 150px !important;
+}
+  
+.modal-body{
+  display: flex;
+  justify-content: space-around;
+}

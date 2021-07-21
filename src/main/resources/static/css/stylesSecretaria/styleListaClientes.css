@@ -1,0 +1,121 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #fff;
+
+}
+
+.cuerpo-secre{
+    margin-top: 7em;
+}
+
+.titulo_secre #contenedor_direc{
+    position: sticky;
+    margin-left: 80em;
+    font-size: 15px;
+}
+
+.lista_opciones ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 10em;
+}
+
+#main-table{
+    margin-top: 0em
+}
+
+.cuerpo_list li{
+    display: inline-block;
+    list-style: none;
+    width: 90%;
+    margin-left:6em;
+}
+
+.dropdown a{
+    margin-top:4.6em;
+    margin-left:auto;
+    color: #000000;
+}
+
+
+
+.navegacion-izq{
+    display: flex;
+    flex: 1 1 auto;
+    visibility: visible;
+    position: fixed;
+    width: 125px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 600;
+    flex-direction: column;
+    background-color: #29a5bb;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-property: width;
+}
+
+.css-qdue7i-Button-button-LoadMoreButton {
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 400;
+    height: 36px;
+    cursor: pointer;
+    color: rgb(44, 19, 56);
+    box-shadow: rgb(149 137 155) 0px 0px 0px 1px inset;
+    padding: 0px 20px;
+    border: 1px solid rgba(235, 231, 235, 0.5);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 55em;
+}
+
+.imprimir{
+    display: flex;
+    flex: 1 1 auto;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    line-height: normal;
+    height: 32px;
+    justify-content: left;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.icon-wrapper{
+    color:black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#small-btn {
+    width: 50px;
+    height: 25px;
+}
+
+#menu-navegacion .botones_navecacion{
+    margin-top: 3em;
+}
+
+#content-form{
+    margin-left: 30em;
+}
+

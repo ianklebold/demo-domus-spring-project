@@ -1,0 +1,75 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #fff;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+/*Variables para colores*/
+:root{
+    --color_red: #0ffac3;
+
+}
+.cabecera_login a{
+    text-decoration: none;
+}
+.cotenido_admin{
+    margin-left: 5em;
+}
+.cotenido_admin a{
+    text-decoration: none;
+}
+
+.titulo_admin ul li{
+    font-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: #3f3f3f;
+    list-style: none;
+}
+
+.titulo_admin ul li{
+    display: inline;
+}
+
+.titulo_admin #contenedor_direc{
+    margin-left: 55em;
+    font-size: 15px;
+}
+
+.lista_opciones ul li{
+    display: inline;
+    list-style: none;
+    margin-left: 10em;
+}
+
+.lista_opciones{
+    margin-top: 5em;
+    margin-left: 3em;
+}
+
+#paginacion_list{
+    margin-left: 30em;
+    margin-top: 5em;
+    
+}
+
+
+
+.cuerpo_list list li table{
+    display: inline;
+}
+
+.cuerpo_list li{
+    display: inline-block;
+    list-style: none;
+}
+
+.cuerpo_list #opciones_lista{
+    margin-left: 10em;
+    position: absolute;
+}

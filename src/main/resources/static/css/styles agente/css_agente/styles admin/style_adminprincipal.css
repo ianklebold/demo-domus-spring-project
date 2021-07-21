@@ -1,0 +1,141 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #fff;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+/*Variables para colores*/
+:root{
+    --color_red: #0ffac3;
+
+}
+
+.cabecera_login{
+    width: 100%;
+    padding-top: 1em;
+    background: rgba(15, 250, 195, 0.2); 
+    z-index: 10;
+	top: 0;
+	position: fixed;
+    
+    -moz-box-shadow: -3px 4px 26px #000000;
+    -webkit-box-shadow: -3px 4px 26px #000000;
+    box-shadow: -3px 4px 26px #000000;
+
+
+}
+
+#boton_cabecera a{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+}
+
+#lista_cabecera {
+    list-style: none;
+    margin:0%;
+    padding:0%;
+}
+
+#lista_cabecera li a{
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold; 
+    font-size: 16px;
+}
+
+#lista_cabecera li{
+    display: inline;
+}
+
+#lista_cabecera li a{
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+
+    display: inline-block;
+}
+
+#lista_cabecera li{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#boton_cabecera{
+    margin-left: 1em ;
+    margin-right: 35em;
+    font-size: 20px;
+}
+
+#lista_cabecera #boton_cabecera a{
+    font-size: 50px;
+    padding-left: 0.2em;
+}
+
+.cotenido_admin{
+    margin-left: 2em;
+    margin-top: 10em;
+    width: 50em;
+    height: 25em;
+}
+
+.titulo_admin{
+    width: 100%;
+    height: 5em;
+}
+
+.titulo_admin h2{
+    font-style: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: #3f3f3f;
+}
+
+.cuerpo_admin{
+    width: 100%;
+    height: 100%;
+   
+
+
+}
+
+.titulo_cuerpo{
+    width: 100%;
+    background: rgba(15, 250, 195, 0.2); 
+
+
+    
+
+    border:solid 1px #000000;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright:8px;
+    -moz-border-radius-bottomleft:0px;
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-top-left-radius:8px;
+    -webkit-border-top-right-radius:8px;
+    -webkit-border-bottom-left-radius:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+
+
+
+
+}
+.titulo_cuerpo h5{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 1em;
+    font-weight: bold; 
+}
+
+.list-group a:hover{
+    background: rgba(15, 250, 195, 0.5); 
+}

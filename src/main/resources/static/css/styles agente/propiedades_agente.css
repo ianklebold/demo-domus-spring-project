@@ -1,0 +1,21 @@
+ul li{
+    padding: none;
+    margin: none;
+    list-style: none;
+}
+
+.lista_prop .reglon_prop{
+    height: 15em;
+    width: 100%;
+}
+
+.reglon_datos{
+    height: 10em;
+    background: red;
+}
+#reglon_datos{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+
