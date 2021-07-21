@@ -12,7 +12,9 @@ public class Cita {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //private Cliente cliente;
+    @ManyToOne(fetch = FetchType.LAZY) //Muchas citas para un solo cliente.
+    @JoinColumn(name = "idcliente")
+    private Cliente cliente;
 
     private String descripcion;
     private String fechaCita;
@@ -42,16 +44,16 @@ public class Cita {
     /**
      * @return Cliente return the cliente
      */
-    /*public Cliente getCliente() {
+    public Cliente getCliente() {
         return cliente;
-    }*/
+    }
 
     /**
      * @param cliente the cliente to set
      */
-    /*public void setCliente(Cliente cliente) {
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
-    }*/
+    }
 
     /**
      * @return String return the descripcion

@@ -1,7 +1,9 @@
 package com.inmobiliaria.domus.entity;
 
+import com.inmobiliaria.domus.entity.Cita;
 import javax.persistence.*;
 
+import java.util.*;
 @Entity
 public class Cliente {
 
@@ -13,6 +15,10 @@ public class Cliente {
     private String apellido;
     private String email;
     private Long telefono; 
+
+    //No existee OneToMany sin un ManyToOne 
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Cita> citas;
 
     /**
      * @return Long return the id
@@ -82,6 +88,21 @@ public class Cliente {
      */
     public void setTelefono(Long telefono) {
         this.telefono = telefono;
+    }
+
+
+    /**
+     * @return List<Cita> return the citas
+     */
+    public List<Cita> getCitas() {
+        return citas;
+    }
+
+    /**
+     * @param citas the citas to set
+     */
+    public void setCitas(List<Cita> citas) {
+        this.citas = citas;
     }
 
 }
