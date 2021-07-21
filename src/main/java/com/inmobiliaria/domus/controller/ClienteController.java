@@ -26,6 +26,8 @@ public class ClienteController {
     public ArrayList<Cliente> obtenerCliente(){
         return domusService.obtenerCliente();
     }
+    
+
 
     @PostMapping()
     public Cliente guardarUsuario(@RequestBody Cliente clienteNuevo){

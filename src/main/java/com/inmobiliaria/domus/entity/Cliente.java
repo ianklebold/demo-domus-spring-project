@@ -14,11 +14,11 @@ public class Cliente {
     private String nombre;
     private String apellido;
     private String email;
-    private Long telefono; 
+    private int telefono; 
 
     //No existee OneToMany sin un ManyToOne 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Cita> citas;
+    private List<Cita> citas = new ArrayList<Cita>();
 
     /**
      * @return Long return the id
@@ -79,14 +79,14 @@ public class Cliente {
     /**
      * @return Long return the telefono
      */
-    public Long getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
     /**
      * @param telefono the telefono to set
      */
-    public void setTelefono(Long telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
 
@@ -103,6 +103,11 @@ public class Cliente {
      */
     public void setCitas(List<Cita> citas) {
         this.citas = citas;
+    }
+
+    public void agregarCitas(Cita cita){
+        citas.add(cita);
+        cita.setCliente(this);
     }
 
 }

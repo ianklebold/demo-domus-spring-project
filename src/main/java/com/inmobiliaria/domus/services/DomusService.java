@@ -27,6 +27,16 @@ public class DomusService {
         return (ArrayList<Cliente>) clienteRepository.findAll();
     }
 
+    public ArrayList<Cliente> clientePorApellido(String apellido){
+        /**
+         * Hacer esto es equivalente a :
+         * Select * 
+         * From Cliente
+         * Where Cliente.apellido == apellido(Por parametro)
+         */
+        return (ArrayList<Cliente>) clienteRepository.findByApellidoLike(apellido);
+    }
+
     public Cliente guardarCliente(Cliente clienteNuevo){
         /**
          * Este metodo guarda en la BD un nuevo cliente
