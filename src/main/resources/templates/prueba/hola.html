@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <table style="border:hidden" class="table table-success table-striped" id="main-table">
+        <thead style="border:hidden">
+            <tr style="border:hidden">
+                <th style="border:hidden" scope="col">Codigo usuario</th>
+                <!--<th style="border:hidden" scope="col">Fecha Contacto</th>-->
+                <th style="border:hidden" scope="col">Nombre</th>
+                <th style="border:hidden" scope="col">Apellido</th>
+                <th style="border:hidden" scope="col">Email</th>
+                <th style="border:hidden" scope="col">Telefono</th>
+                
+            </tr>
+        </thead>
+        <tbody style="border:hidden">
+            <tr style="border:hidden" th:each = "cliente: ${c}">
+                <th style="border:hidden" scope="row" th:text="${cliente.id}"></th>
+               <!-- <td style="border:hidden">03/03/2021</td> -->
+                <td style="border:hidden" th:text="${cliente.nombre}"></td>
+                <td style="border:hidden" th:text="${cliente.apellido}"></td>
+                <td style="border:hidden" th:text="${cliente.email}"></td>
+                <td style="border:hidden" id='mainTd' th:text="${cliente.telefono}"></td>
+            
+        </tbody>
+    </table>
+</body>
+</html>
